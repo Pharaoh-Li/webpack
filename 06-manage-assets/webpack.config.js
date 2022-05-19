@@ -14,7 +14,7 @@ module.exports = {
     assetModuleFilename: 'images/[contenthash][ext]'
   },
 
-  mode: 'production',
+  mode: 'development',
 
   devtool: 'inline-source-map',
 
@@ -71,6 +71,14 @@ module.exports = {
         test: /\.(css|less)$/,
         // use: ['style-loader', 'css-loader', 'less-loader']
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+      },
+
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'wofffont/[contenthash][ext]'
+        }
       }
     ]
   },

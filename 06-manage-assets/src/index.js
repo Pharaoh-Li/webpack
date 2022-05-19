@@ -18,6 +18,7 @@ document.body.appendChild(img2)
 
 const block = document.createElement('div')
 block.style.cssText = 'width: 200px; height: 200px; background: aliceblue'
+block.classList.add('block-bg')
 block.textContent = exampleText
 document.body.appendChild(block)
 
@@ -27,3 +28,8 @@ img3.src = jpgMap
 document.body.appendChild(img3)
 
 document.body.classList.add('hello')
+
+const span = document.createElement('span')
+span.classList.add('icon')
+span.innerHTML = '&#xe639;'
+document.body.appendChild(span)

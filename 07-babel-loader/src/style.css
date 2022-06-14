@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'iconFont';
+  src: url('./assets/iconfont.ttf');
+}
+
+.hello {
+  color: red;
+}
+
+.icon {
+  font-family: 'iconFont';
+}
+
+.block-bg {
+  background-image: url('./assets/Colorful.jpeg') !important;
+}
